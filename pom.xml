@@ -62,6 +62,31 @@
   		<artifactId>httpmime</artifactId>
   		<version>4.5.5</version>
   	</dependency>
+  	<dependency>
+		<groupId>sax</groupId>
+		<artifactId>sax</artifactId>
+		<version>2.0.1</version>
+	</dependency>
+  	<dependency>
+  		<groupId>xml-apis</groupId>
+  		<artifactId>xml-apis</artifactId>
+  		<version>1.4.01</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>org.apache.xmlbeans</groupId>
+  		<artifactId>xmlbeans</artifactId>
+  		<version>2.6.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>xerces</groupId>
+  		<artifactId>xercesImpl</artifactId>
+  		<version>2.11.0</version>
+  	</dependency>
+  	<dependency>
+  		<groupId>com.syncthemall</groupId>
+  		<artifactId>boilerpipe</artifactId>
+  		<version>1.2.1</version>
+  	</dependency>
   </dependencies>
   
   <build>

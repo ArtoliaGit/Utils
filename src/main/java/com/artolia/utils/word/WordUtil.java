@@ -10,6 +10,7 @@ import java.io.OutputStreamWriter;
 import java.io.Writer;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Base64;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
@@ -24,7 +25,6 @@ import freemarker.template.MalformedTemplateNameException;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
 import freemarker.template.TemplateNotFoundException;
-import sun.misc.BASE64Encoder;
 
 public class WordUtil {
 
@@ -72,8 +72,7 @@ public class WordUtil {
 			fis.read(data);
 			fis.close();
 			
-			BASE64Encoder encoder = new BASE64Encoder();
-			dataMap.put("image", encoder.encode(data));
+			dataMap.put("image", Base64.getEncoder().encodeToString(data));
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
 		} catch (IOException e) {
@@ -100,7 +99,7 @@ public class WordUtil {
 		String filePath = "/upload";
 		
 		String fileOnlyName = "导出word" + sb + ".doc";
-		String fileName = "导出word.doc";
+//		String fileName = "导出word.doc";
 		
 		createWord(dataMap, "freemarker模板.ftl", filePath, fileOnlyName);
 	}

@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
+encoding//src/main/java/com/artolia/utils/dbconnect/HikariTest.java=gbk
+encoding//src/main/java/com/artolia/utils/http/HttpRequestTest.java=gbk
+encoding//src/main/java/com/artolia/utils/word/WordUtil.java=gbk
 encoding//src/main/resources/template/freemarker\u6A21\u677F.ftl=UTF-8
